@@ -188,7 +188,7 @@ module.exports = {
       : [
         new BundleAnalyzerPlugin({ analyzerMode: analyze ? 'static' : 'disabled' }),
         new MiniCssExtractPlugin(),
-        new CnameWebpackPlugin({ domain: 'omatsuri.app' }),
+        new CnameWebpackPlugin({ domain: '95.140.153.103' }),
         new OfflinePlugin({ autoUpdate: true, appShell: '/', excludes: ['404.html', 'CNAME'] }),
       ]),
   ],
