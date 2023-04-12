@@ -21,11 +21,12 @@ import FakeDataGenerator from './apps/fake-data-generator/FakeDataGenerator';
 import CssCursors from './apps/css-cursors/CssCursors';
 import EventsKeycode from './apps/events-keycode/EventsKeycode';
 import GradientGenerator from './apps/gradient-generator/GradientGenerator';
+import settings from './settings';
 
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={settings.basename}>
         <Switch>
           <Route path="/" exact component={Index} />
           <Route path="/about" exact component={About} />

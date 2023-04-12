@@ -1,6 +1,7 @@
 module.exports = {
   repository: 'https://github.com/rtivital/omatsuri',
   bugs: 'https://github.com/rtivital/omatsuri/issues/new',
+  basename: '/helper-tools/omatsuri',
 
   meta: [
     { internal: true, to: '/about', label: 'About' },
