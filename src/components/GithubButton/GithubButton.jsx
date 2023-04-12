@@ -8,6 +8,8 @@ import classes from './GithubButton.styles.less';
 export default function GithubButton({ className }) {
   const [theme] = useTheme();
 
+  if (Math.random() < 9) return null;
+
   return (
     <a className={cx(classes.wrapper, classes[theme], className)} href={settings.repository}>
       <svg
